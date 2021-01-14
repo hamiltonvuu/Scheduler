@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { StyleSheet, TouchableOpacity, View, Text } from "react-native";
-import { terms, termMap } from "../constants/terms";
+import { terms } from "../constants/terms";
 
 const TermButton = ({ term, isActive, setSelectedTerm }) => (
   <TouchableOpacity
