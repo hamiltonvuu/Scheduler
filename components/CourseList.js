@@ -6,7 +6,7 @@ import CourseSelector from "./CourseSelector";
 
 const getCourseTerm = (course) => termMap[course.id.charAt(0)];
 
-const CourseList = ({ courses }) => {
+const CourseList = ({ courses, view }) => {
   const [selectedTerm, setSelectedTerm] = useState("Fall");
   const termCourses = courses.filter(
     (course) => selectedTerm === getCourseTerm(course)
@@ -18,7 +18,7 @@ const CourseList = ({ courses }) => {
         selectedTerm={selectedTerm}
         setSelectedTerm={setSelectedTerm}
       />
-      <CourseSelector courses={termCourses} />
+      <CourseSelector courses={termCourses} view={view} />
     </ScrollView>
   );
 };
