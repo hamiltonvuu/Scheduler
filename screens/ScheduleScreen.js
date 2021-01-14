@@ -3,7 +3,7 @@ import { StyleSheet, SafeAreaView } from "react-native";
 import Banner from "../components/Banner";
 import CourseList from "../components/CourseList";
 import UserContext from "../UserContext";
-import { firebase } from "../firebase";
+import { firebase } from "../utils/firebase";
 
 const fixCourses = (json) => ({
   ...json,
